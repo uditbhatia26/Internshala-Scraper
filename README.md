@@ -28,40 +28,18 @@ This project automates the process of scraping internship and job data from Inte
 1. **Clone the Repository**
     ```bash
     git clone https://github.com/your-username/internshala-job-alerts.git
-    cd internshala-job-alerts
     ```
 
 2. **Set Up JavaScript Environment**
-    - Navigate to the `scraper` directory.
     - Install the required npm packages.
     ```bash
-    cd scraper
     npm install axios cheerio
     ```
 
 3. **Run the Scraper**
     - Run the JavaScript scraper to extract data from Internshala.
     ```bash
-    node scraper.js
-    ```
-
-4. **Set Up Python Environment**
-    - Navigate to the `notifier` directory.
-    - Create a virtual environment and activate it.
-    ```bash
-    cd notifier
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-    - Install the required Python packages.
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5. **Run the Notifier**
-    - Use Python to read the data file and process it.
-    ```bash
-    python notifier.py
+    node internshala.js
     ```
 
 ## Usage
@@ -71,14 +49,7 @@ This project automates the process of scraping internship and job data from Inte
    ```bash
    node scraper.js
    ```
-   - This will scrape the latest job data from Internshala and save it to `data.txt`.
-
-2. **Process the Data:**
-   - Navigate to the `notifier` directory and run the Python script.
-   ```bash
-   python notifier.py
-   ```
-   - This will read the `data.txt` file and process the job data for future use.
+   - This will scrape the latest job data from Internshala and save it to `data.json`.
 
 ## Contributing
 
